@@ -38,6 +38,7 @@ def main(args):
             image_path = os.path.join(args.output,
                                       image_name + '.' + image_ext)
             if args.trample or not os.path.exists(image_path):
+                print("Downloading " + image_name)
                 download_image(image_url, image_path)
 
 
